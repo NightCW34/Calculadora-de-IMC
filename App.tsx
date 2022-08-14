@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
 import { Title } from "./Components";
 import { Container } from "./Components";
 import { Blank } from "./Components";
@@ -11,7 +10,7 @@ export default function App() {
   const [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
   const [result, setResult] = useState(0);
-  const [imcColor, setColorImc] = useState<string>("");
+
 
   const calculateImc = () => {
     const imc = weight / (height * height);
@@ -70,11 +69,4 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+
